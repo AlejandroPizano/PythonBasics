@@ -1,0 +1,7 @@
+{
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.pythonPath": "C:\\Python39\\python.exe",
+    "python.analysis.completeFunctionParens": true,
+    "vsintellicode.features.python.deepLearning": "enabled"
+}
