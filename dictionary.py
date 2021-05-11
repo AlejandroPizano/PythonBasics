@@ -13,7 +13,6 @@ def cartelera():
     if current_movies.get(pelicula):
         print(pelicula," se esta reproduciendo a las ",current_movies.get(pelicula) )
     else:
-        clear()
         print("Esa pelicula no esta dentro de la cartelera\n")
         cartelera()
 cartelera()
