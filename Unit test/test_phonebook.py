@@ -32,4 +32,3 @@ class PhoneBookTest(unittest.TestCase):
         self.phonebook.add("Bob", "12345")
         self.phonebook.add("Sue", "123")
         self.assertFalse(self.phonebook.is_consistent())
-#si sirve
