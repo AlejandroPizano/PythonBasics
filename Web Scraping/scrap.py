@@ -21,3 +21,8 @@ print(labels)
 print(len(labels))
 with open('tesla_tables.html', 'w', encoding="utf-8") as file:
     file.write(str(labels))
+
+df = pd.DataFrame(labels)
+print(df)
+with open('tesla_excel.html', 'w', encoding="utf-8") as file:
+    file.write(str(df.to_excel))
