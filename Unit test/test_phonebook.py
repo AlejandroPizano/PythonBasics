@@ -31,4 +31,4 @@ class PhoneBookTest(unittest.TestCase):
     def test_empty_phonebook_is_inconsistent_duplicate_prefix(self):
         self.phonebook.add("Bob", "12345")
         self.phonebook.add("Sue", "123")
-        self.assertFalse(self.phonebook.is_consistent())
+        self.assertFalse(self.phonebook.is_consistent()) 
