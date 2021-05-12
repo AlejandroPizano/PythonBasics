@@ -14,10 +14,10 @@ print("--------------------------------------------------")
 table_head = tables_wiki.select('tr th')
 print(table_head)
 labels = []
-for element in table_head:
-    labels.append("Tesla model X version:  "+element.text)
-labels.pop(0)
-print (labels)
+for index, element in enumerate(table_head):
+    if index > 0:
+        labels.append("Tesla model X version:  " + element.text.strip())
+print(labels)
+print(len(labels))
 with open('tesla_tables.html', 'w', encoding="utf-8") as file:
     file.write(str(labels))
-
