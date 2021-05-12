@@ -26,3 +26,6 @@ df = pd.DataFrame(labels)
 print(df)
 with open('tesla_excel.html', 'w', encoding="utf-8") as file:
     file.write(str(df.to_excel))
+
+with open("tesla.html", "r") as file:
+    print(file.read())
