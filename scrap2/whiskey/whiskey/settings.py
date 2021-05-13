@@ -1,4 +1,4 @@
-# Scrapy settings for whiskyscraper project
+# Scrapy settings for whiskey project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,14 +7,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'whiskyscraper'
+BOT_NAME = 'whiskey'
 
-SPIDER_MODULES = ['whiskyscraper.spiders']
-NEWSPIDER_MODULE = 'whiskyscraper.spiders'
+SPIDER_MODULES = ['whiskey.spiders']
+NEWSPIDER_MODULE = 'whiskey.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'whiskyscraper (+http://www.yourdomain.com)'
+#USER_AGENT = 'whiskey (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
@@ -45,13 +45,13 @@ ROBOTSTXT_OBEY = False
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'whiskyscraper.middlewares.WhiskyscraperSpiderMiddleware': 543,
+#    'whiskey.middlewares.WhiskeySpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'whiskyscraper.middlewares.WhiskyscraperDownloaderMiddleware': 543,
+#    'whiskey.middlewares.WhiskeyDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -63,7 +63,7 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'whiskyscraper.pipelines.WhiskyscraperPipeline': 300,
+#    'whiskey.pipelines.WhiskeyPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)

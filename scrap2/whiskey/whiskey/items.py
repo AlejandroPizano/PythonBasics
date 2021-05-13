@@ -6,9 +6,7 @@
 import scrapy
 
 
-class WhiskyscraperItem(scrapy.Item):
+class WhiskeyItem(scrapy.Item):
     # define the fields for your item here like:
-    name = scrapy.Field()
-    name = scrapy.Field()
-    name = scrapy.Field()
+    # name = scrapy.Field()
     pass
