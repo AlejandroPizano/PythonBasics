@@ -5,7 +5,7 @@ class WhiskeySpider(scrapy.Spider):
     name='whisky'
     start_urls = ['https://www.whiskyshop.com/scotch-whisky']
 
-    def parse(self, response):
+    def parse(self, response, **kwargs):
         for products in response.css("div.product-item-info"):
             try:
                 yield{
