@@ -8,6 +8,7 @@ def request (url):
     res.html.render(sleep=1)
 
     print(res.status_code)
+    #print(res.html.xpath('//*[@id="searchBasedNavigation_widget_6_2303"]/div[1]/div[2]', first= True))
     return res.html.xpath('//*[@id="searchBasedNavigation_widget_6_2303"]/div[1]/div[2]', first= True)
 
 
@@ -16,11 +17,8 @@ def parse(products):
         try:
             res= s.get(product)
             name = res.html.find('div.top.namePartPriceContainer.clearfix', first= True).text
-            price = res.html.find('div.pcontado', first=True).text.replace("de contado","")
-            flag=True
         except:
             print("No se encontro el producto!!")
-            flag=False
 
         if res.html.find('div.p_oferta'):
             price = res.html.find('div.tam_normal', first=True).text.replace("de contado","").replace('&nbsp;', '')
